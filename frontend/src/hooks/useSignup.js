@@ -24,7 +24,7 @@ const useSignup = () => {
             throw new Error(data.error);
         };
 
-        //localstorage
+        //save to localstorage
         localStorage.setItem("chat-user", JSON.stringify(data));
         //context
         setAuthUser(data);
